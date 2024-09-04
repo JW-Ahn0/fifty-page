@@ -1,0 +1,86 @@
+.container {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.requestedPhoto {
+  display: flex;
+  width: 80%;
+  max-width: 800px;
+  max-height: calc(100% - 338px);
+  object-fit: contain;
+  margin: 12px;
+  border: 3px solid black;
+}
+
+.logo {
+  width: 200px;
+  margin: 10px;
+}
+
+.contentContainer {
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+.downloadContainer {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+button {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+  color: white;
+  /* 기존 색깔, background : rgb(238, 210, 122); */
+  background: #a6d9e2;
+  outline: none;
+  border: none;
+  border-radius: 32px;
+  padding: 16px;
+  margin: 12px 0px;
+  font-weight: 700;
+  text-align: start;
+  max-width: 360px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 1px -2px,
+    rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px;
+}
+
+.downloadText {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  padding-left: 6px;
+}
+
+.download {
+  width: 18px;
+  height: 18px;
+  margin-left: auto;
+  padding-right: 6px;
+}
+
+.instaContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.instaImage {
+  width: 20px;
+  height: 20px;
+}
