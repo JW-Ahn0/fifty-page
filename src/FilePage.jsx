@@ -13,7 +13,6 @@ const FilePage = () => {
   useEffect(() => {
     const imageRef = ref(storage, fileName + "/image.jpg");
     const videoRef = ref(storage, fileName + "/video.mp4");
-    console.log(imageRef);
     getDownloadURL(imageRef)
       .then((url) => {
         setImageUrl(url);
@@ -28,6 +27,7 @@ const FilePage = () => {
   }, [fileName]);
 
   const downLoadFile = (url) => {
+    console.log(url);
     const link = document.createElement("a");
     link.href = url;
     link.download = fileName;
