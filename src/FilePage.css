@@ -1,86 +1,142 @@
-.container {
-  display: flex;
-  height: 100vh;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.requestedPhoto {
-  display: flex;
-  width: 80%;
-  max-width: 800px;
-  max-height: calc(100% - 338px);
-  object-fit: contain;
-  margin: 12px;
-  border: 3px solid black;
-}
-
-.logo {
-  width: 200px;
-  margin: 10px;
-}
-
-.contentContainer {
-  width: 100%;
-  margin-bottom: 20px;
-  display: flex;
-  flex-direction: column;
-}
-
 p {
   padding: 0;
   margin: 0;
 }
 
-.downloadContainer {
-  width: 60%;
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-}
-
 button {
-  position: relative;
-  left: 50%;
-  transform: translate(-50%, 0);
-  color: white;
-  /* 기존 색깔, background : rgb(238, 210, 122); */
-  background: #a6d9e2;
-  outline: none;
-  border: none;
-  border-radius: 32px;
-  padding: 16px;
-  margin: 12px 0px;
-  font-weight: 700;
-  text-align: start;
-  max-width: 360px;
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 1px -2px,
-    rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px;
+  all: unset; /* 모든 기본 스타일 제거 */
+  display: inline-block; /* 필요에 따라 추가 */
 }
 
-.downloadText {
+.Container {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("/public/img/Background.png");
+}
+
+.HeaderLogo {
+  padding-top: 36px;
+}
+.Logo {
+  padding-top: 5px;
+}
+.Requested-Photo {
+  display: flex;
+  width: 80%;
+  max-width: 800px;
+  max-height: calc(100% - 338px);
+  object-fit: contain;
+  margin-top: 17px;
+  border: none;
+}
+
+.Content-Container {
+  width: 100%;
+  padding-bottom: 27px;
   display: flex;
   flex-direction: column;
-  font-size: 14px;
-  padding-left: 6px;
 }
 
-.download {
-  width: 18px;
-  height: 18px;
-  margin-left: auto;
-  padding-right: 6px;
+.Info-Container {
+  display: flex;
+  flex-direction: column;
+  gap: 5.52px;
+  margin-top: 16px;
+}
+.Info-Text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Info-Text-Title {
+  font-size: 14.9296px;
+  line-height: 18px;
+  color: rgba(0, 0, 0, 1);
+}
+.Info-Text-Subtitle {
+  font-size: 12px;
+  line-height: 14.4px;
+  color: #7c7c7c;
+}
+.Button-Box-Container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-top: 17.48px;
 }
 
-.instaContainer {
+.Button-Box {
+  background: #f9f9f9;
+  border: 0.3px solid #2e2e2e;
+  border-radius: 10px;
+  width: 300px;
+  height: 54px;
+  display: flex;
+  gap: 24px;
+}
+
+.Button-Box-Text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 3px;
+  padding-left: 25px;
+  flex: 1;
+}
+
+.Button-Box-Text-Title {
+  font-size: 14.93px;
+  line-height: 17.91px;
+  font-weight: 600;
+  color: rgba(46, 46, 46, 1);
+}
+
+.Button-Box-Text-Subtitle {
+  font-size: 12px;
+  line-height: 14.4px;
+  font-weight: 400;
+  color: rgba(46, 46, 46, 0.5);
+}
+.Dvider {
+  width: 0px;
+  height: 38px;
+  align-self: center;
+  border: 0.5px dashed #2e2e2e;
+  border-radius: 10px;
+}
+
+.Button-Box-Icon {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
+  padding-right: 24px;
+}
+.Download-Icon {
+  width: 18.72px;
+  height: 19.82px;
+  color: rgba(46, 46, 46, 1);
+  cursor: pointer;
 }
 
-.instaImage {
-  width: 20px;
-  height: 20px;
+/** 배너 **/
+.Banner-Container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  margin-top: 12px;
+}
+
+.Banner-Text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
 }
